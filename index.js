@@ -1,7 +1,7 @@
 let toShow = document.getElementById('toShow');
 let toHide = document.getElementById('toHide');
 let getLinks = document.getElementById('links');
-getLinks.classList.add("trans")
+// getLinks.classList.add("trans")
 
 toShow.addEventListener("click", () => {
     getLinks.style.margin = "0px"
