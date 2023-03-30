@@ -73,8 +73,6 @@ li a {
         flex-direction: column;
     }
         .links {
-        width: 100%;
-         position: absolute;
         margin: -300px;
         }
     .logo {
