@@ -58,21 +58,24 @@ li a {
 
 
 
-
 @media (max-width: 780px) {
     .navbar {
+        background-color: #9599E2;
         flex-direction: column;
     }
-     .links {
-    
-     background-color: #000;
-     }
+        /* .links {
+        margin-top: -300px;
+        } */
     .logo {
+        background-color: #9599E2;
+        z-index: 2;
         justify-content: flex-start;
         text-align: left;
         font-size: 20px;
     }
-
+    .logo:hover .links {
+        margin-top: 0;
+    }
     .logo h5 {
         font-size: 18px;
     }
@@ -85,6 +88,7 @@ li a {
         margin: 8px;
     }
     .menu {
+        z-index: 2;
         display: block;
         position: absolute;
         right: 0;
@@ -94,4 +98,30 @@ li a {
     #toHide {
         display: none;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EXTRA FOR JAVASCRIPT */
+.toHide {
+    margin-top: -300px;
+    transition: 3s;
+}
+.toNone {
+    display: none;
 }
