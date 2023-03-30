@@ -68,6 +68,7 @@ li a {
     .navbar {
         background-color: #9599E2;
         flex-direction: column;
+        position: relative;
     }
         .links {
         margin: -300px;
