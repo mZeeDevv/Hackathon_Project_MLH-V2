@@ -62,20 +62,21 @@ li a {
 
 
 @media (max-width: 780px) {
-    body {
-        position: relative;
+    h1 {
+        z-index: 2;
     }
     .navbar {
+        top: 0;
+        width: 100%;
+        position: absolute;
         background-color: #9599E2;
         flex-direction: column;
-        position: relative;
     }
         .links {
         margin: -300px;
         }
     .logo {
         background-color: #9599E2;
-        /* z-index: 1; */
         justify-content: flex-start;
         text-align: left;
         font-size: 20px;
