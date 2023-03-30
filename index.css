@@ -51,6 +51,9 @@ li a {
 .menu {
     display: none;
 }
+.trans {
+  transition: 2s;
+}
 
 
 
@@ -63,12 +66,12 @@ li a {
         background-color: #9599E2;
         flex-direction: column;
     }
-        /* .links {
+        .links {
         margin-top: -300px;
-        } */
+        }
     .logo {
         background-color: #9599E2;
-        z-index: 2;
+        z-index: 1;
         justify-content: flex-start;
         text-align: left;
         font-size: 20px;
@@ -118,7 +121,7 @@ li a {
 
 
 /* EXTRA FOR JAVASCRIPT */
-.toHide {
+.toHideJS {
     margin-top: -300px;
     transition: 3s;
 }
