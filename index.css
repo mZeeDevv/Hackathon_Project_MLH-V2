@@ -9,9 +9,6 @@ body {
     color: #fff;
 }
 
-
-
-
 /* NAVBAR AREA */
 .navbar {
     display: flex;
@@ -81,6 +78,17 @@ li a {
         padding: 30px;
     }
 
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .imgs {
+        border: 3px solid salmon;
+        height: 30vh;
+        width: 70%;
+    }
 
 
 
