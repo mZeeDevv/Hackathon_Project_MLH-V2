@@ -118,7 +118,7 @@ li i {
     }
     
 
-    /* BOTTOM NAVBAR */
+    /* ////////////////////////////////////////////////BOTTOM NAVBAR */
 
     .bottom_navbar {
         background-color: #8BC6EC;
@@ -188,37 +188,58 @@ li i {
     /* /////////////////////////////////// ABOUT US SECTION //////////
      */
     .about {
-        background-color: #9599E2;
+        margin-bottom: 150px;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .head2{
+        font-size: 25px;
+    }
+    .sub_about {
+        font-size: 24px;
+        margin: 20px;
+    }
+    .abt {
+        display: flex;
+        justify-content: center;   
+    }
+    .about_us {
+        border-radius: 7px;
+        width: 90%;
+        background-color: #eaeff28b;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about_us p {
+        padding: 10px;
+        font-size: 30px;
+    }
+    .about_us span {
+        color: yellow;
+         font-weight: bolder; 
+         text-decoration: underline;
+         font-size: 30px;
+         margin: 4px;
+    }
+    .manager {
+        display: flex;
+        padding: 6px;
+        justify-content: flex-end;
+        color: #000000a1;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 25px;
     }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @media (max-width: 780px) {
+    
         .navbar {
             background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
             flex-direction: column;
@@ -280,7 +301,21 @@ li i {
             width: 91%;
             height: 60vh;
           }
-
+          /* //////////////////////////// ABOUT US //////////// */
+          .about {
+            margin-bottom: 10px;
+            }
+            .sub_about {
+                font-size: 15px;
+                margin: 10px;
+            }
+            .about_us p {
+                padding: 8px;
+                font-size: 15px;
+            }
+            .manager {
+                font-size: 14px;
+            }
 
 
     }
