@@ -178,6 +178,7 @@ li i {
         background-color: rgba(0, 128, 0, 0.507);
         height: 5vh;
         margin: 10px;
+        width: 90%;
     }
     textarea {
         outline: none;
