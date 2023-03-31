@@ -176,8 +176,9 @@ li i {
     .contact_area button {
         color: white;
         background-color: rgba(0, 128, 0, 0.507);
-        height: 5vh;
+        padding: 10px;
         margin: 10px;
+        font-size: 20px;
     }
     textarea {
         outline: none;
