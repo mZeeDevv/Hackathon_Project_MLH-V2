@@ -94,6 +94,7 @@ li i {
         background-size: cover;
         background-position: center;
         animation: pictures 30s linear infinite;
+        margin-bottom: 50px;
     }
     @keyframes pictures {
         0%{
@@ -124,7 +125,6 @@ li i {
         background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
         width: 100%;
         height: 20vh;
-        margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -139,7 +139,50 @@ li i {
         font-size: 30px;
     }
     
+              /* ///////////////////////////////////// CONTACT AREA ///////////////// */
 
+    .contact_section {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }          
+    .contact_area {
+       padding: 50px;
+        background-color: #8bc5ec7e;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_area h3 {
+        font-size: 30px;
+    }
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 20px;
+         font-family: 'Oswald', sans-serif;
+
+    }
+    .inputs input {
+        padding: 5px;
+        outline: none;
+        margin-top: 6px;
+        width: 300px;
+        height: 4vh;
+    }
+    .contact_area button {
+        color: white;
+        background-color: rgba(0, 128, 0, 0.507);
+        height: 5vh;
+        margin: 10px;
+    }
+    textarea {
+        outline: none;
+        padding: 5px;
+    }
 
 
 
