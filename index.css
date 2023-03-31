@@ -249,11 +249,23 @@ li i {
 .main_div {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.56);
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+.main_div button
+{
+    border-radius: 8px;
+    border: 2px solid white;
+    font-size: 20px;
+    font: bolder;
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    background-color: yellow;
+    margin: 10px;
+ padding: 10px 26px;
 }
 .offer_one, .offer_two, .offer_three, .offer_four {
     text-align: center;
@@ -262,14 +274,34 @@ li i {
     padding: 10px;
     width: 300px;
     background-color: #00000079;
-    height: 70vh;
     margin: 10px;
     border: 2px solid black;
     border-radius: 6px;
 }
-.offer_one, .offer_two, .offer_three, .offer_four {
+.main_div h4{
     font-size: 22px;
     color: yellow;
+}
+.offer {
+    margin-top: 10px;
+    margin-left: -7px;
+    text-align: start;
+}
+.offer p {
+    margin-top: 15px;
+}
+
+
+    @media (max-width: 780px) {
+        .main_div {
+            flex-direction: column;
+            
+        }
+        .offer_one, .offer_two, .offer_three, .offer_four h4 {
+            font-size: 14px;
+        }
+.offer_one, .offer_two, .offer_three, .offer_four {  
+ padding: 20;
 }
 
 
@@ -279,20 +311,6 @@ li i {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    @media (max-width: 780px) {
-    
         .navbar {
             background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
             flex-direction: column;
@@ -343,7 +361,7 @@ li i {
 
         /* SECTION ONE */
         .section_one {
-            height: 120vh; 
+            /* height: 120vh;  */
             position: absolute;
             top: 9%;
             z-index: -1;
@@ -371,8 +389,9 @@ li i {
                 font-size: 14px;
             }
             .bottom_navbar {
+                
                 position: absolute;
-                bottom: 0;
+                bottom: -80;
                 background-color: #8BC6EC;
                 background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
                 width: 100%;
