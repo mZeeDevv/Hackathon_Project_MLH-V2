@@ -150,10 +150,12 @@ li i {
         text-align: center;
     }          
     .contact_area {
-       padding: 10px;
+       padding: 30px;
         background-color: #8bc5ec7e;
         display: flex;
         flex-direction: column;
+        border-radius: 9px;
+
     }
     .contact_area h3 {
         font-size: 30px;
@@ -171,7 +173,7 @@ li i {
         outline: none;
         margin-top: 6px;
         width: 300px;
-        height: 4vh;
+        height: 6vh;
     }
     .contact_area button {
         color: white;
@@ -233,6 +235,57 @@ li i {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 25px;
     }
+    /* /////////////////////////// SERVICES ////////////////////////////////// */
+.services {
+    display: flex;
+    flex-direction: column;
+}
+.head3 {
+    margin: 20px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+}
+.main_div {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.56);
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.offer_one, .offer_two, .offer_three, .offer_four {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 300px;
+    background-color: #00000079;
+    height: 70vh;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.offer_one, .offer_two, .offer_three, .offer_four {
+    font-size: 22px;
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -317,9 +370,6 @@ li i {
             .manager {
                 font-size: 14px;
             }
-
-
-
             .bottom_navbar {
                 position: absolute;
                 bottom: 0;
@@ -333,7 +383,11 @@ li i {
                 text-align: center;
                 font-size: 30px;
             }
-    }
+            .contact_area {
+                border-radius: 5px;
+                padding: 10px;
+            }
+        }
 
 
 
