@@ -150,7 +150,7 @@ li i {
         text-align: center;
     }          
     .contact_area {
-       padding: 50px;
+       padding: 10px;
         background-color: #8bc5ec7e;
         display: flex;
         flex-direction: column;
@@ -290,6 +290,7 @@ li i {
 
         /* SECTION ONE */
         .section_one {
+            height: 120vh; 
             position: absolute;
             top: 9%;
             z-index: -1;
@@ -303,7 +304,7 @@ li i {
           }
           /* //////////////////////////// ABOUT US //////////// */
           .about {
-            margin-bottom: 10px;
+            margin-bottom: 0px;
             }
             .sub_about {
                 font-size: 15px;
@@ -318,6 +319,20 @@ li i {
             }
 
 
+
+            .bottom_navbar {
+                position: absolute;
+                bottom: 0;
+                background-color: #8BC6EC;
+                background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+                width: 100%;
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                font-size: 30px;
+            }
     }
 
 
