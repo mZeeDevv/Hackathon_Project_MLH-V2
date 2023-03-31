@@ -86,10 +86,31 @@ li a {
     }
     .imgs {
         border: 3px solid salmon;
-        height: 30vh;
-        width: 70%;
+        height: 60vh;
+        width: 80%;
+        background-size: cover;
+        background-position: center;
+        animation: pictures 10s linear infinite;
     }
+    @keyframes pictures {
+        0%{
+            background-image: url('1.jpg');
+        }
+        20%{
+            background-image: url('2.jpg');
+        }
+        40%{
+            background-image: url('3.jpg');
+        }
+        60%{
+            background-image: url('4.jpg');
+        }
+        80%{
+            background-image: url('5.jpg');
+        }
 
+    }
+    
 
 
 
