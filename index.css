@@ -39,15 +39,18 @@ body {
 
 .navbar li {
     margin: 20px;
+    font-size: 22px;
 }
 
-li a {
+a {
     text-decoration: none;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: 19px;
+    font-size: 22px;
 }
-
+li i {
+    color: yellow;
+}
 .menu {
     display: none;
 
@@ -117,10 +120,23 @@ li a {
     /* BOTTOM NAVBAR */
 
     .bottom_navbar {
-       background-color: #9599E2;
+        background-color: #8BC6EC;
+        background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
         width: 100%;
         height: 20vh;
         margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+    }
+    .credits {
+      font-size: 40px;
+    }
+    .media a{
+        margin: 10px;
+        font-size: 30px;
     }
     
 
