@@ -8,7 +8,6 @@
 
 body {
     color: #fff;
-    scroll-behavior: smooth;
 }
 
 /* NAVBAR AREA */
@@ -350,7 +349,29 @@ textarea {
     text-align: center;
     width: 60%;
 }
-
+.form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    font-size: 300px;
+}
+.sub_form {
+    padding: 30px;
+    background-color: #8BC6EC;
+    display: flex;
+    flex-direction: row;
+}
+.inputs2 {
+    display: flex;
+    flex-direction: column;
+}
 
 @media (max-width: 780px) {
 .line {
