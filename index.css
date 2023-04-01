@@ -607,6 +607,9 @@ option {
         text-align: center;
         font-size: 30px;
     }
+    .bottom_navbar a {
+        text-decoration: none;
+    }
 
     .contact_area {
         border-radius: 5px;
