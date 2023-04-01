@@ -22,7 +22,7 @@ if (x.matches) {
 }
 let close = document.getElementById('close');
 let dialogue = document.getElementById('success')
-function turnoff(){
+function turnoff() {
     dialogue.style.display = "none"
 };
 

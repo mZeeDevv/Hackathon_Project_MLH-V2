@@ -207,6 +207,7 @@ textarea {
     outline: none;
     padding: 5px;
 }
+
 .bottom_navbar a {
     text-decoration: none;
 }
@@ -332,17 +333,20 @@ textarea {
 .offer p {
     margin-top: 15px;
 }
+
 /* ////////////////////// ORDER AREA  */
 .line {
     display: flex;
     flex-direction: row;
 }
+
 .sub_line {
     border-radius: 5px;
     height: 1vh;
-    width: 80%; 
+    width: 80%;
     background-color: yellow;
 }
+
 .order {
     margin-top: -20px;
     font-size: 30px;
@@ -352,11 +356,13 @@ textarea {
     text-align: center;
     width: 60%;
 }
+
 .form {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
 }
+
 .icon {
     display: flex;
     justify-content: center;
@@ -365,6 +371,7 @@ textarea {
     width: 60%;
     font-size: 300px;
 }
+
 .sub_form {
     margin-bottom: 30px;
     text-align: center;
@@ -377,34 +384,39 @@ textarea {
     font-size: 22px;
     font-family: 'Oswald', sans-serif;
 }
-.sub_form button{
+
+.sub_form button {
     margin: 10px;
     padding: 5px 15px;
     color: white;
     background-color: rgba(0, 128, 0, 0.507);
     font-size: 22px;
 }
+
 option {
     font-size: 20px;
 }
+
 .inputs2 {
     display: flex;
     flex-direction: column;
 }
-.sub_inp input
-{
+
+.sub_inp input {
     padding: 5px;
     margin-left: 10px;
     border-radius: 8px;
     outline: none;
-height: 4vh;
- width: 200px;
+    height: 4vh;
+    width: 200px;
 }
+
 .sub_inp {
-     margin: 10px;
+    margin: 10px;
     display: flex;
     justify-content: space-between;
 }
+
 .success {
     padding: 30px;
     text-align: center;
@@ -413,13 +425,15 @@ height: 4vh;
     background-color: rgba(255, 255, 255, 0.67);
     position: fixed;
     left: 35%;
-    top: 50%; 
+    top: 50%;
     display: none;
 }
+
 .success a {
     color: #000;
 
 }
+
 .success button {
     margin-top: 20px;
     background-color: #000;
@@ -429,20 +443,24 @@ height: 4vh;
     padding: 5px 10px;
     width: 50%;
 }
+
 .data {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 table {
     background-color: #b4bec4a5;
 }
+
 th {
     color: yellow;
     border: 2px solid black;
     font-size: 18px;
     padding: 10px 30px;
 }
+
 td {
     padding: 10px 30px;
     border: 1px solid salmon;
@@ -461,15 +479,18 @@ td {
         align-items: center;
         justify-content: center;
     }
-   table {
-    margin-top: 10px;
-   }
+
+    table {
+        margin-top: 10px;
+    }
+
     th {
         color: yellow;
         border: 1px solid black;
         font-size: 10px;
         padding: 0px 0px;
     }
+
     td {
         font-size: 10px;
         padding: 0px 0px;
@@ -477,6 +498,7 @@ td {
         color: #000;
         font-weight: bolder;
     }
+
     .success {
         padding: 10px;
         text-align: center;
@@ -485,33 +507,40 @@ td {
         background-color: rgba(255, 255, 255, 0.67);
         position: fixed;
         left: 10%;
-        top: 10%; 
+        top: 10%;
         display: none;
         flex-direction: column;
     }
+
     .sub_form {
         font-size: 12px;
     }
-option {
-    font-size: 12px;
-}
-.form {
-    justify-content: center;
-}
-.line {
-    flex-direction: column;
-}
-.order {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 20px;
-}
-.sub_line {
-    width: 100%;
-}
-.icon {
-    display: none;
-}
+
+    option {
+        font-size: 12px;
+    }
+
+    .form {
+        justify-content: center;
+    }
+
+    .line {
+        flex-direction: column;
+    }
+
+    .order {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .sub_line {
+        width: 100%;
+    }
+
+    .icon {
+        display: none;
+    }
 
     .navbar {
         background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
@@ -610,7 +639,7 @@ option {
         text-align: center;
         font-size: 30px;
     }
-  
+
 
     .contact_area {
         border-radius: 5px;

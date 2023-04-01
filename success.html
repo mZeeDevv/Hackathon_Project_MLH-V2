@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <title>Success</title>
     <style>
         body {
-    font-family: 'Oswald', sans-serif;
+            font-family: 'Oswald', sans-serif;
             display: flex;
             justify-content: center;
             background-color: rgba(142, 177, 177, 0.699);
         }
-        .main_con{
+
+        .main_con {
             border: 1px solid black;
             margin-top: 100px;
             position: absolute;
@@ -21,36 +23,44 @@
             justify-content: center;
             transform: translateY(-50%, -50%);
         }
+
         .f_con {
             padding: 20px;
             background-color: rgba(235, 232, 228, 0.685);
             font-size: 30px;
         }
+
         .head {
             text-align: center;
         }
+
         p {
             text-align: center;
             font-size: 20px;
         }
-    @media (max-width: 780px) {
-        p {
-            font-size: 12px;
+
+        @media (max-width: 780px) {
+            p {
+                font-size: 12px;
+            }
+
+            .f_con {
+                font-size: 17px;
+            }
         }
-        .f_con 
-        {
-            font-size: 17px;
-        }
-    }
     </style>
 </head>
+
 <body>
     <div class="main_con">
-    <div class="f_con">
-        <div class="head"><h3>Success  <i class="fa-solid fa-circle-check" style="color: #59f505;"></i></h3></div>     
-           <h5>We have recieved your message. </h5>
-           <p>Go back to <a href="index.html">Homepage</a></p>
-    </div>
+        <div class="f_con">
+            <div class="head">
+                <h3>Success <i class="fa-solid fa-circle-check" style="color: #59f505;"></i></h3>
+            </div>
+            <h5>We have recieved your message. </h5>
+            <p>Go back to <a href="index.html">Homepage</a></p>
+        </div>
     </div>
 </body>
+
 </html>

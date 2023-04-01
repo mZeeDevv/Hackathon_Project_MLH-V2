@@ -36,35 +36,36 @@
         </div>
 
         <div class="section_one" id="section_one" onclick="None()" style="height: 100vh;">
-<div class="data">
-    <table>
-    <thead>
-            <th id="no">S.No</th>
-            <th>Name</th>
-            <th>Package</th>
-            <th>Vehicle Color</th>
-            <th>Vehicle Name</th>
-            <th>Email Address</th>
-            <th>Time Of Service</th>
-    </thead>
-   <tbody id="tableBody"></tbody>
-      </table>
+            <div class="data">
+                <table>
+                    <thead>
+                        <th id="no">S.No</th>
+                        <th>Name</th>
+                        <th>Package</th>
+                        <th>Vehicle Color</th>
+                        <th>Vehicle Name</th>
+                        <th>Email Address</th>
+                        <th>Time Of Service</th>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
 
 
 
 
-</div>
-<div class="bottom_navbar" style="position: absolute; bottom: -20%;">
-    <div class="credits">
-        <h6>Made By <span style="color:rgb(233, 233, 17)">mZee Dev </span><i class="fa-solid fa-heart"></i></h6>
-    </div>
-    <div class="media">
-        <a href="#"><i class="fa-brands fa-instagram" style="color: #bd3d88;"></i> </a>
-        <a href="#"><i class="fa-brands fa-github" style="color: #000000;"></i> </a>
-        <a href="#"> <i class="fa-brands fa-facebook" style="color: #3f82ee;"></i> </a>
-        <a href="#"> <i class="fa-brands fa-twitter" style="color: #1ccef2;"></i> </a>
-    </div>
-</div>
+            </div>
+            <div class="bottom_navbar" style="position: absolute; bottom: -20%;">
+                <div class="credits">
+                    <h6>Made By <span style="color:rgb(233, 233, 17)">mZee Dev </span><i class="fa-solid fa-heart"></i>
+                    </h6>
+                </div>
+                <div class="media">
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: #bd3d88;"></i> </a>
+                    <a href="#"><i class="fa-brands fa-github" style="color: #000000;"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-facebook" style="color: #3f82ee;"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-twitter" style="color: #1ccef2;"></i> </a>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -72,73 +73,73 @@
 <script type="module">
     // Import the funct
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
- const firebaseConfig = {
-     apiKey: "AIzaSyBja3EYlI1JWwOuxGQanPypcTKDtx2AsJM",
-     authDomain: "mzee-autos.firebaseapp.com",
-     databaseURL: "https://mzee-autos-default-rtdb.firebaseio.com",
-     projectId: "mzee-autos",
-     storageBucket: "mzee-autos.appspot.com",
-     messagingSenderId: "630742957454",
-     appId: "1:630742957454:web:98c6a5626780e49ffdf8df"
- };
+    const firebaseConfig = {
+        apiKey: "AIzaSyBja3EYlI1JWwOuxGQanPypcTKDtx2AsJM",
+        authDomain: "mzee-autos.firebaseapp.com",
+        databaseURL: "https://mzee-autos-default-rtdb.firebaseio.com",
+        projectId: "mzee-autos",
+        storageBucket: "mzee-autos.appspot.com",
+        messagingSenderId: "630742957454",
+        appId: "1:630742957454:web:98c6a5626780e49ffdf8df"
+    };
 
- const app = initializeApp(firebaseConfig);
- import { getDatabase, ref, set, child, update, remove, get }
-     from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
-      
-     const db = getDatabase()
+    const app = initializeApp(firebaseConfig);
+    import { getDatabase, ref, set, child, update, remove, get }
+        from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
-let AM_PM = "AM"
-var SNO = 0;
-var time = 1;
-var tbody = document.getElementById('tableBody')
-function fillTable(customer, vehicle_name, vehicle_color, vehicle_model, email, Package)
-{
-    let trow = document.createElement('tr');
-    let td1 = document.createElement('td');
-    let td2 = document.createElement('td');
-    let td3 = document.createElement('td');
-    let td4 = document.createElement('td');
-    let td5 = document.createElement('td');
-    let td6 = document.createElement('td');
-    let td7 = document.createElement('td');
+    const db = getDatabase()
 
-    td1.innerHTML = ++SNO;
-    td2.innerHTML = customer;
-    td3.innerHTML = vehicle_name;
-    td4.innerHTML = vehicle_color;
-    td5.innerHTML = vehicle_model;
-    td6.innerHTML = email;
-    td7.innerHTML = ++time +`:00` + ` ` + `${AM_PM}`;
+    let AM_PM = "AM"
+    var SNO = 0;
+    var time = 1;
+    var tbody = document.getElementById('tableBody')
+    function fillTable(customer, vehicle_name, vehicle_color, vehicle_model, email, Package) {
+        let trow = document.createElement('tr');
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+        let td6 = document.createElement('td');
+        let td7 = document.createElement('td');
 
-    trow.appendChild(td1);
-    trow.appendChild(td2);
-    trow.appendChild(td3);
-    trow.appendChild(td4);
-    trow.appendChild(td5);
-    trow.appendChild(td6);
-    trow.appendChild(td7);
+        td1.innerHTML = ++SNO;
+        td2.innerHTML = customer;
+        td3.innerHTML = vehicle_name;
+        td4.innerHTML = vehicle_color;
+        td5.innerHTML = vehicle_model;
+        td6.innerHTML = email;
+        td7.innerHTML = ++time + `:00` + ` ` + `${AM_PM}`;
 
-    tbody.appendChild(trow);
-}
-function AddtheItems(Customers){
-    SNO=0;
-    tbody.innerHTML="";
-    Customers.forEach(element => {
-        fillTable(element.CustomerName, element.Offer, element.VehicleColor, element.VehicleName, element.VehicleName,
-        element.email)
-    });
-}
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+        trow.appendChild(td5);
+        trow.appendChild(td6);
+        trow.appendChild(td7);
+
+        tbody.appendChild(trow);
+    }
+    function AddtheItems(Customers) {
+        SNO = 0;
+        tbody.innerHTML = "";
+        Customers.forEach(element => {
+            fillTable(element.CustomerName, element.Offer, element.VehicleColor, element.VehicleName, element.VehicleName,
+                element.email)
+        });
+    }
     const bdRef = ref(db)
-get(child(bdRef, "Customers"))
-.then((snapshot) => {
-    var Customers = [];
+    get(child(bdRef, "Customers"))
+        .then((snapshot) => {
+            var Customers = [];
 
-    snapshot.forEach(childSnapshot => {
-        Customers.push(childSnapshot.val())
-    });
-   AddtheItems(Customers)
-})
+            snapshot.forEach(childSnapshot => {
+                Customers.push(childSnapshot.val())
+            });
+            AddtheItems(Customers)
+        })
 </script>
 <script src="index.js"></script>
+
 </html>
