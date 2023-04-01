@@ -207,6 +207,9 @@ textarea {
     outline: none;
     padding: 5px;
 }
+.bottom_navbar a {
+    text-decoration: none;
+}
 
 /* /////////////////////////////////// ABOUT US SECTION //////////
      */
@@ -607,9 +610,7 @@ option {
         text-align: center;
         font-size: 30px;
     }
-    .bottom_navbar a {
-        text-decoration: none;
-    }
+  
 
     .contact_area {
         border-radius: 5px;
