@@ -79,6 +79,7 @@
 
 
 /////////////////// FALLING TABLE ///////////////////////
+let AM_PM = "AM"
 var SNO = 0;
 var time = 1;
 var tbody = document.getElementById('tableBody')
@@ -99,7 +100,7 @@ function fillTable(customer, vehicle_name, vehicle_color, vehicle_model, email, 
     td4.innerHTML = vehicle_color;
     td5.innerHTML = vehicle_model;
     td6.innerHTML = email;
-    td7.innerHTML = ++time;
+    td7.innerHTML = ++time +`:00` + ` ` + `${AM_PM}`;
 
     trow.appendChild(td1);
     trow.appendChild(td2);

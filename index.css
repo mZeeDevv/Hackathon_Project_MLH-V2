@@ -456,24 +456,24 @@ td {
     .data {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
    table {
     margin-top: 10px;
    }
     th {
         color: yellow;
-        border: 2px solid black;
+        border: 1px solid black;
         font-size: 10px;
         padding: 0px 0px;
     }
     td {
         font-size: 10px;
-        padding: 0px 5px;
+        padding: 0px 0px;
         border: 1px solid salmon;
         color: #000;
         font-weight: bolder;
     }
-
     .success {
         padding: 10px;
         text-align: center;
