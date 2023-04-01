@@ -26,4 +26,3 @@ function turnoff(){
     dialogue.style.display = "none"
 }
 
-

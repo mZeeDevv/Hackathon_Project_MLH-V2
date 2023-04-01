@@ -438,7 +438,7 @@ height: 4vh;
         position: fixed;
         left: 10%;
         top: 10%; 
-        display: flex;
+        display: none;
         flex-direction: column;
     }
     .sub_form {

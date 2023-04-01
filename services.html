@@ -177,55 +177,55 @@
 </body>
 <script src="index.js"></script>
 <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
+     // Import the functions you need from the SDKs you need
+ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+ // TODO: Add SDKs for Firebase products that you want to use
+ // https://firebase.google.com/docs/web/setup#available-libraries
 
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-        apiKey: "AIzaSyBja3EYlI1JWwOuxGQanPypcTKDtx2AsJM",
-        authDomain: "mzee-autos.firebaseapp.com",
-        databaseURL: "https://mzee-autos-default-rtdb.firebaseio.com",
-        projectId: "mzee-autos",
-        storageBucket: "mzee-autos.appspot.com",
-        messagingSenderId: "630742957454",
-        appId: "1:630742957454:web:98c6a5626780e49ffdf8df"
-    };
+ // Your web app's Firebase configuration
+ const firebaseConfig = {
+     apiKey: "AIzaSyBja3EYlI1JWwOuxGQanPypcTKDtx2AsJM",
+     authDomain: "mzee-autos.firebaseapp.com",
+     databaseURL: "https://mzee-autos-default-rtdb.firebaseio.com",
+     projectId: "mzee-autos",
+     storageBucket: "mzee-autos.appspot.com",
+     messagingSenderId: "630742957454",
+     appId: "1:630742957454:web:98c6a5626780e49ffdf8df"
+ };
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    import { getDatabase, ref, set, child, update, remove, get }
-        from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+// Initialize Firebase
+ const app = initializeApp(firebaseConfig);
+ import { getDatabase, ref, set, child, update, remove, get }
+     from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+      
+     const db = getDatabase()
+     
+ //////////////////////////// DATABASE SECTION ////////////////////
+ var name = document.getElementById('name');
+ var vehicle_name = document.getElementById('vehicle_name');
+ var vehicle_model = document.getElementById('vehicle_model');
+ var vehicle_color = document.getElementById('vehicle_color');
+ var email = document.getElementById('email');
+ var options = document.getElementById('option');
 
-    //////////////////////////// DATABASE SECTION ////////////////////
-    var name = document.getElementById('name');
-    var vehicle_name = document.getElementById('vehicle_name');
-    var vehicle_model = document.getElementById('vehicle_model');
-    var vehicle_color = document.getElementById('vehicle_color');
-    var email = document.getElementById('email');
-    var options = document.getElementById('option');
-    const db = getDatabase()
-    const btn = document.getElementById('btn')
-    
-
-    function submitData() {
-        set(ref(db, "Customers/" + name.value), {
-            CustomerName: name.value,
-            VehicleName: vehicle_name.value,
-            VehicleModel: vehicle_model.value,
-            VehicleColor: vehicle_color.value,
-            email: email.value,
-            Offer: options.value
-        })
-            .then(() => {
-                dialogue.style.display = "block"
-            })
-            .catch((error) => {
-                alert("NOT SUCESS, Please try again.....")
-            }
-            )
-    }
-btn.addEventListener("click", submitData)
+ const btn = document.getElementById('btn')
+ function submitData() {
+     set(ref(db, "Customers/" + name.value), {
+         CustomerName: name.value,
+         VehicleName: vehicle_name.value,
+         VehicleModel: vehicle_model.value,
+         VehicleColor: vehicle_color.value,
+         email: email.value,
+         Offer: options.value
+     })
+         .then(() => {
+             dialogue.style.display = "block"
+         })
+         .catch((error) => {
+             alert("NOT SUCESS, Please try again.....")
+         }
+         )
+ }
+ btn.addEventListener("click", submitData)
 </script>
 </html>
