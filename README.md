@@ -13,4 +13,4 @@ The main thing I learned that how can we use a database for web, I used firebase
 I Used HTML5, CSS3 And Vanilla JavaScript in this project because I really want to improve my JavaScript!
 
 ## DEMO VIDEO
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YyIDWBtODHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=YyIDWBtODHI&t=2s
