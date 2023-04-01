@@ -20,15 +20,10 @@ if (x.matches) {
         getLinks.classList.add('mar')
     }
 }
-
-
-
-var options = document.getElementById('option');
-let btn = document.getElementById('btn')
-
-btn.addEventListener("click", () =>{
-    console.log(option.value)
-})
-
+let close = document.getElementById('close');
+let dialogue = document.getElementById('success')
+function turnoff(){
+    dialogue.style.display = "none"
+}
 
 

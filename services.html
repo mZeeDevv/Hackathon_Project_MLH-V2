@@ -25,7 +25,7 @@
                     <li><a href="index.html">Home <i class="fa-solid fa-house"></i></a></li>
                     <li><a href="about.html">About Us <i class="fa-solid fa-address-card"></i></a></li>
                     <li><a href="services.html">Our Services <i class="fa-sharp fa-regular fa-handshake"></i></a></li>
-                    <li><a href="buysell.html">Buy & Sell <i class="fa-solid fa-car-side"></i></a></li>
+                    <li><a href="buysell.html">Waiting Area <i class="fa-solid fa-car-side"></i></a></li>
                     <li><a href="contact.html">Contact us <i class="fa-solid fa-envelope"></i></a></li>
                 </ul>
             </div>
@@ -120,34 +120,35 @@
                     <form>
                         <div class="inputs2">
                             <div class="sub_inp">
-                                 <label>Your Name</label>
-                                <input type="text" placeholder="First Name....." required>
+                                <label>Your Name</label>
+                                <input type="text" placeholder="First Name....." required id="name">
                             </div>
                             <div class="sub_inp">
                                 <label>Vehicle Name</label>
-                               <input type="text" placeholder="Vehicle Name....." required>
-                           </div>
-                           <div class="sub_inp">
-                            <label>Vehicle Model</label>
-                           <input type="number" placeholder="Vehicle Model...." required>
-                       </div>
-                       <div class="sub_inp">
-                        <label>Vehicle Color</label>
-                       <input type="text" placeholder="Vehicle color....." required>
-                   </div>
-                   <div class="sub_inp">
-                    <label>Your Email</label>
-                   <input type="text" placeholder="Email Address....." required>
-               </div>
-               <div class="sub_inp">
-                <label>Select an Offer</label>
-                <select id="option">
-                    <option>MLH USERS OFFER</option>
-                    <option>Normal Customers Offers</option>
-                    <option>Premium Offer</option>
-                    <option>Existing Customers Offer</option>
-                </select>
-           </div>   </div>
+                                <input type="text" placeholder="Vehicle Name....." required id="vehicle_name">
+                            </div>
+                            <div class="sub_inp">
+                                <label>Vehicle Model</label>
+                                <input type="number" placeholder="Vehicle Model...." required id="vehicle_model">
+                            </div>
+                            <div class="sub_inp">
+                                <label>Vehicle Color</label>
+                                <input type="text" placeholder="Vehicle color....." required id="vehicle_color">
+                            </div>
+                            <div class="sub_inp">
+                                <label>Your Email</label>
+                                <input type="text" placeholder="Email Address....." required id="email">
+                            </div>
+                            <div class="sub_inp">
+                                <label>Select an Offer</label>
+                                <select id="option">
+                                    <option>MLH USERS OFFER</option>
+                                    <option>Normal Customers Offers</option>
+                                    <option>Premium Offer</option>
+                                    <option>Existing Customers Offer</option>
+                                </select>
+                            </div>
+                        </div>
                         <button id="btn">Submit</button>
                 </div>
             </div>
@@ -155,7 +156,8 @@
 
             <div class="bottom_navbar">
                 <div class="credits">
-                    <h6>Made By <span style="color:rgb(233, 233, 17)">mZee Dev </span><i class="fa-solid fa-heart"></i></h6>
+                    <h6>Made By <span style="color:rgb(233, 233, 17)">mZee Dev </span><i class="fa-solid fa-heart"></i>
+                    </h6>
                 </div>
                 <div class="media">
                     <a href="#"><i class="fa-brands fa-instagram" style="color: #bd3d88;"></i> </a>
@@ -164,10 +166,66 @@
                     <a href="#"> <i class="fa-brands fa-twitter" style="color: #1ccef2;"></i> </a>
                 </div>
             </div>
-            </div>
+        </div>
 
+    </div>
+    <div class="success" id="success">
+        <h2>Success</h2>
+        <p>You can check you number in <a href="#">Waiting area</a></p>
+        <button class="close" id="close" onclick="turnoff()">Close</button>
     </div>
 </body>
 <script src="index.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyBja3EYlI1JWwOuxGQanPypcTKDtx2AsJM",
+        authDomain: "mzee-autos.firebaseapp.com",
+        databaseURL: "https://mzee-autos-default-rtdb.firebaseio.com",
+        projectId: "mzee-autos",
+        storageBucket: "mzee-autos.appspot.com",
+        messagingSenderId: "630742957454",
+        appId: "1:630742957454:web:98c6a5626780e49ffdf8df"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    import { getDatabase, ref, set, child, update, remove, get }
+        from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+    //////////////////////////// DATABASE SECTION ////////////////////
+    var name = document.getElementById('name');
+    var vehicle_name = document.getElementById('vehicle_name');
+    var vehicle_model = document.getElementById('vehicle_model');
+    var vehicle_color = document.getElementById('vehicle_color');
+    var email = document.getElementById('email');
+    var options = document.getElementById('option');
+    const db = getDatabase()
+    const btn = document.getElementById('btn')
+    
+
+    function submitData() {
+        set(ref(db, "Customers/" + name.value), {
+            CustomerName: name.value,
+            VehicleName: vehicle_name.value,
+            VehicleModel: vehicle_model.value,
+            VehicleColor: vehicle_color.value,
+            email: email.value,
+            Offer: options.value
+        })
+            .then(() => {
+                dialogue.style.display = "block"
+            })
+            .catch((error) => {
+                alert("NOT SUCESS, Please try again.....")
+            }
+            )
+    }
+btn.addEventListener("click", submitData)
+</script>
 </html>
