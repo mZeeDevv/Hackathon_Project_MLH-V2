@@ -426,8 +426,53 @@ height: 4vh;
     padding: 5px 10px;
     width: 50%;
 }
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    background-color: #b4bec4a5;
+}
+th {
+    color: yellow;
+    border: 2px solid black;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+td {
+    padding: 10px 30px;
+    border: 1px solid salmon;
+    color: #000;
+    font-weight: bolder;
+}
+
+
+
+
+
 
 @media (max-width: 780px) {
+    .data {
+        display: flex;
+        align-items: center;
+    }
+   table {
+    margin-top: 10px;
+   }
+    th {
+        color: yellow;
+        border: 2px solid black;
+        font-size: 10px;
+        padding: 0px 0px;
+    }
+    td {
+        font-size: 10px;
+        padding: 0px 5px;
+        border: 1px solid salmon;
+        color: #000;
+        font-weight: bolder;
+    }
 
     .success {
         padding: 10px;
@@ -464,14 +509,6 @@ option {
 .icon {
     display: none;
 }
-
-
-
-
-
-
-
-
 
     .navbar {
         background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);

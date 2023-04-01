@@ -24,5 +24,8 @@ let close = document.getElementById('close');
 let dialogue = document.getElementById('success')
 function turnoff(){
     dialogue.style.display = "none"
-}
+};
+
+
+
 
