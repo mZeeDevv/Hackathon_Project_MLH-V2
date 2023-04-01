@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7bad2979bc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
-    <title> Buy & Sell | mZee Autos</title>
+    <title> Waiting Area | mZee Autos</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="section_one" id="section_one" onclick="None()">
+        <div class="section_one" id="section_one" onclick="None()" style="height: 100vh;">
 <div class="data">
     <table>
     <thead>
@@ -54,7 +54,19 @@
 
 
 </div>
+<div class="bottom_navbar" style="position: absolute; bottom: -20%;">
+    <div class="credits">
+        <h6>Made By <span style="color:rgb(233, 233, 17)">mZee Dev </span><i class="fa-solid fa-heart"></i></h6>
+    </div>
+    <div class="media">
+        <a href="#"><i class="fa-brands fa-instagram" style="color: #bd3d88;"></i> </a>
+        <a href="#"><i class="fa-brands fa-github" style="color: #000000;"></i> </a>
+        <a href="#"> <i class="fa-brands fa-facebook" style="color: #3f82ee;"></i> </a>
+        <a href="#"> <i class="fa-brands fa-twitter" style="color: #1ccef2;"></i> </a>
+    </div>
+</div>
         </div>
+
     </div>
 </body>
 <script type="module">
@@ -70,15 +82,12 @@
      appId: "1:630742957454:web:98c6a5626780e49ffdf8df"
  };
 
-// Initialize Firebase
  const app = initializeApp(firebaseConfig);
  import { getDatabase, ref, set, child, update, remove, get }
      from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
       
      const db = getDatabase()
 
-
-/////////////////// FALLING TABLE ///////////////////////
 let AM_PM = "AM"
 var SNO = 0;
 var time = 1;
@@ -112,9 +121,6 @@ function fillTable(customer, vehicle_name, vehicle_color, vehicle_model, email, 
 
     tbody.appendChild(trow);
 }
-
-////////////////////////////////////////////// AddingItemstoTableTImebyTIme
-
 function AddtheItems(Customers){
     SNO=0;
     tbody.innerHTML="";
@@ -123,8 +129,6 @@ function AddtheItems(Customers){
         element.email)
     });
 }
-
-//// GETTING DATAAAA //////////////////////
     const bdRef = ref(db)
 get(child(bdRef, "Customers"))
 .then((snapshot) => {
